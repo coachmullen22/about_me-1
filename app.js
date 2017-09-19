@@ -1,23 +1,58 @@
 
 "use strict";
 
-
-//The questions in the guessing game must require a mix of yes/no answers, and user input must accept either y/n or yes/no responses, with either .toUpperCase() or .toLowerCase() used to validate the user input and accommodate users entering all-caps Y/N or YES/NO answers, too.
-//Useful and descriptive console.log() messages in the JS are well written and correctly displaying to the browser console for each question of the guessing game.
-//Use CSS to style your page as you see fit, to the level of abilities in CSS that you currently have
 //Add, Commit, Push process is being followed; it is evident in GitHub that commits are made regularly, and with good commit messages that explain the WHY of the commit.
 
 
-//var userName = prompt('Thanks for stopping by my page! What is your name?')
-//alert('Hi ' + userName + ', see if you can get the correct answers about me');
+var userName = prompt('Thanks for stopping by my page! What is your name?')
+alert('Hi ' + userName + '!' + ' Let\'s play a game! See if you can guess correct answers about me.');
 
 //Q1
-var answer1 = prompt('Do I have four cats?').toLowerCase();
+var answer1 = prompt('Do I like cheese?').toLowerCase();
 console.log('Answer 1 is ' + answer1);
-if (answer1 === 'n' || answer1 === 'no') {
-  //tell user the answewr is correct
-  alert('Correct!!');
+
+if (answer1 === 'y' || answer1 === 'yes') {
+  alert('Yes, I love cheese! Especially, Havarti!');
 } else {
-  //tell user it was wrong
-  alert('Incorrect!!');
+  alert('Wrong! Who doesn\'t love cheese?');
+}
+
+//Q2
+var answer2 = prompt('Have I ever wrestled a bear?').toLowerCase();
+console.log('Answer 2 is ' + answer2);
+
+if (answer2 === 'n' || answer2 === 'no') {
+  alert('Correct!!, Why would I ever wrestle a bear?');
+} else {
+  alert('No way José! That\'s dangerous!');
+}
+
+//Q3
+var answer3 = prompt('Do I like to go camping?').toLowerCase();
+console.log('Answer 3 is ' + answer3);
+
+if (answer3 === 'y' || answer3 === 'yes') {
+  alert('Sure do! Who doesn\'t?!');
+} else {
+  alert('Wrong! I love camping!');
+}
+
+//Q4
+var answer4 = prompt('Do I have any siblings?').toLowerCase();
+console.log('Answer 4 is ' + answer4);
+
+if (answer4 === 'y' || answer4 === 'yes') {
+  alert('Yes! I have 2 brothers!');
+} else {
+  alert('Incorrect! I have 2 brothers');
+}
+
+//Q5
+var answer5 = prompt('Do I have a fear of Tarantulas?').toLowerCase();
+console.log('Answer 5 is ' + answer5);
+
+if (answer5 === 'y' || answer5 === 'yes') {
+  alert('Correct! I\'m terrified!');
+} else {
+  alert('Wrong! I\'m terrified!');
 }
