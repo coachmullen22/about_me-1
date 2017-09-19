@@ -1,10 +1,7 @@
 
-"use strict";
+'use strict';
 
-//Add, Commit, Push process is being followed; it is evident in GitHub that commits are made regularly, and with good commit messages that explain the WHY of the commit.
-
-
-var userName = prompt('Thanks for stopping by my page! What is your name?')
+var userName = prompt('Thanks for stopping by my page! What is your name?');
 alert('Hi ' + userName + '!' + ' Let\'s play a game! See if you can guess correct answers about me.');
 
 //Q1
@@ -44,7 +41,7 @@ console.log('Answer 4 is ' + answer4);
 if (answer4 === 'y' || answer4 === 'yes') {
   alert('Yes! I have 2 brothers!');
 } else {
-  alert('Incorrect! I have 2 brothers');
+  alert('Incorrect! I have 2 brothers.');
 }
 
 //Q5
