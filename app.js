@@ -34,15 +34,18 @@ function question2() {
 question2();
 
 //Q3
-var answer3 = prompt('Do I like to go camping?').toLowerCase();
-console.log('Answer 3 is ' + answer3);
+function question3() {
+  var answer3 = prompt('Do I like to go camping?').toLowerCase();
+  console.log('Answer 3 is ' + answer3);
 
-if (answer3 === 'y' || answer3 === 'yes') {
-  alert('Sure do! Who doesn\'t?!');
-  ++score;
-} else {
-  alert('Wrong! I love camping!');
+  if (answer3 === 'y' || answer3 === 'yes') {
+    alert('Sure do! Who doesn\'t?!');
+    ++score;
+  } else {
+    alert('Wrong! I love camping!');
+  }
 }
+question3();
 
 //Q4
 var answer4 = prompt('Do I have any siblings?').toLowerCase();
