@@ -6,15 +6,18 @@ var userName = prompt('Thanks for stopping by my page! What is your name?');
 alert('Hi ' + userName + '!' + ' Let\'s play a game! See if you can guess correct answers about me.');
 
 //Q1
-var answer1 = prompt('Do I like cheese?').toLowerCase();
-console.log('Answer 1 is ' + answer1);
+function question1() {
+  var answer1 = prompt('Do I like cheese?').toLowerCase();
+  console.log('Answer 1 is ' + answer1);
 
-if (answer1 === 'y' || answer1 === 'yes') {
-  alert('Yes, I love cheese! Especially, Havarti!');
-  ++score;
-} else {
-  alert('Wrong! Who doesn\'t love cheese?');
+  if (answer1 === 'y' || answer1 === 'yes') {
+    alert('Yes, I love cheese! Especially, Havarti!');
+    ++score;
+  } else {
+    alert('Wrong! Who doesn\'t love cheese?');
+  }
 }
+question1();
 
 //Q2
 var answer2 = prompt('Have I ever wrestled a bear?').toLowerCase();
