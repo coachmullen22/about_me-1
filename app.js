@@ -48,15 +48,19 @@ function question3() {
 question3();
 
 //Q4
-var answer4 = prompt('Do I have any siblings?').toLowerCase();
-console.log('Answer 4 is ' + answer4);
+function question4() {
 
-if (answer4 === 'y' || answer4 === 'yes') {
-  alert('Yes! I have 2 brothers!');
-  ++score;
-} else {
-  alert('Incorrect! I have 2 brothers.');
+  var answer4 = prompt('Do I have any siblings?').toLowerCase();
+  console.log('Answer 4 is ' + answer4);
+
+  if (answer4 === 'y' || answer4 === 'yes') {
+    alert('Yes! I have 2 brothers!');
+    ++score;
+  } else {
+    alert('Incorrect! I have 2 brothers.');
+  }
 }
+question4();
 
 //Q5
 var answer5 = prompt('Do I have a fear of Tarantulas?').toLowerCase();
