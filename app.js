@@ -7,6 +7,7 @@ alert('Hi ' + userName + '!' + ' Let\'s play a game! See if you can guess correc
 
 //Q1
 function question1() {
+
   var answer1 = prompt('Do I like cheese?').toLowerCase();
   console.log('Answer 1 is ' + answer1);
 
@@ -21,6 +22,7 @@ question1();
 
 //Q2
 function question2() {
+
   var answer2 = prompt('Have I ever wrestled a bear?').toLowerCase();
   console.log('Answer 2 is ' + answer2);
 
@@ -35,6 +37,7 @@ question2();
 
 //Q3
 function question3() {
+
   var answer3 = prompt('Do I like to go camping?').toLowerCase();
   console.log('Answer 3 is ' + answer3);
 
@@ -73,6 +76,7 @@ function question5() {
     ++score;
   } else {
     alert('Wrong! I\'m terrified!');
+  }
 }
 question5();
 
@@ -122,7 +126,7 @@ function question7() {
     }
     console.log('Answer 7 is ' + answer7);
   }
-  if (i === 3) {
+  if (j === 3) {
     alert('Wrong again! OH NO! NO MORE TRIES!');
   }
 }
