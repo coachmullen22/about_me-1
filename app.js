@@ -20,15 +20,18 @@ function question1() {
 question1();
 
 //Q2
-var answer2 = prompt('Have I ever wrestled a bear?').toLowerCase();
-console.log('Answer 2 is ' + answer2);
+function question2() {
+  var answer2 = prompt('Have I ever wrestled a bear?').toLowerCase();
+  console.log('Answer 2 is ' + answer2);
 
-if (answer2 === 'n' || answer2 === 'no') {
-  alert('Correct!!, Why would I ever wrestle a bear?');
-  ++score;
-} else {
-  alert('No way José! That\'s dangerous!');
+  if (answer2 === 'n' || answer2 === 'no') {
+    alert('Correct!!, Why would I ever wrestle a bear?');
+    ++score;
+  } else {
+    alert('No way José! That\'s dangerous!');
+  }
 }
+question2();
 
 //Q3
 var answer3 = prompt('Do I like to go camping?').toLowerCase();
