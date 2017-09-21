@@ -105,26 +105,30 @@ question6();
 
 
 //Q7
-var answer7 = prompt('Can you guess a country I\'ve been to?').toLowerCase();
-console.log('Answer 7 is ' + answer7);
-var country = ['mexico', 'turkey','england'];
+function question7() {
 
-for (var j = 0; j < 5; j++) {
-  if (answer7 === country[0] || answer7 === country[1] || answer7 === country[2]) {
-    alert('Correct! I\'ve been to Mexico, Turkey, and England');
-    ++score;
-    break;
-  } else {
-    alert('Sorry! Try again.');
-    answer7 = prompt('Can you guess a country I\'ve been to?').toLowerCase();
-  }
+  var answer7 = prompt('Can you guess a country I\'ve been to?').toLowerCase();
   console.log('Answer 7 is ' + answer7);
+  var country = ['mexico', 'turkey','england'];
+
+  for (var j = 0; j < 5; j++) {
+    if (answer7 === country[0] || answer7 === country[1] || answer7 === country[2]) {
+      alert('Correct! I\'ve been to Mexico, Turkey, and England');
+      ++score;
+      break;
+    } else {
+      alert('Sorry! Try again.');
+      answer7 = prompt('Can you guess a country I\'ve been to?').toLowerCase();
+    }
+    console.log('Answer 7 is ' + answer7);
+  }
+  if (i === 3) {
+    alert('Wrong again! OH NO! NO MORE TRIES!');
+  }
 }
-if (i === 3) {
-  alert('Wrong again! OH NO! NO MORE TRIES!');
-}
+question7();
 
 
-alert('I\'ve been to Mexico, Turkey, and England!');
-alert('You got ' + score + ' right!' + 'Better luck next time!');
-console.log(score);
+  alert('I\'ve been to Mexico, Turkey, and England!');
+  alert('You got ' + score + ' right!' + 'Better luck next time!');
+  console.log(score);
