@@ -77,27 +77,31 @@ function question5() {
 question5();
 
 //Q6
-var answer6 = parseInt(prompt('What is my favorite number?'));
-console.log('Answer 6 is ' + answer6);
+function question6() {
 
-for (var i = 0; i < 3; i++) {
-  if (answer6 === 2) {
-    alert('Correct!');
-    ++score;
-    break;
-  } else if (answer6 > 2) {
-    alert('Too high! Try again.');
-    answer6 = parseInt(prompt('What is my favorite number?'));
-  } else if (answer6 < 2) {
-    alert('Too low!');
-    answer6 = parseInt(prompt('What is my favorite number?'));
-  }
+  var answer6 = parseInt(prompt('What is my favorite number?'));
   console.log('Answer 6 is ' + answer6);
-}
 
-if (i === 3) {
-  alert('Wrong again! OH NO! NO MORE TRIES!');
+  for (var i = 0; i < 3; i++) {
+    if (answer6 === 2) {
+      alert('Correct!');
+      ++score;
+      break;
+    } else if (answer6 > 2) {
+      alert('Too high! Try again.');
+      answer6 = parseInt(prompt('What is my favorite number?'));
+    } else if (answer6 < 2) {
+      alert('Too low!');
+      answer6 = parseInt(prompt('What is my favorite number?'));
+    }
+    console.log('Answer 6 is ' + answer6);
+  }
+
+  if (i === 3) {
+    alert('Wrong again! OH NO! NO MORE TRIES!');
+  }
 }
+question6();
 
 
 //Q7
