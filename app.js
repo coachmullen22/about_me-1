@@ -63,15 +63,18 @@ function question4() {
 question4();
 
 //Q5
-var answer5 = prompt('Do I have a fear of Tarantulas?').toLowerCase();
-console.log('Answer 5 is ' + answer5);
+function question5() {
 
-if (answer5 === 'y' || answer5 === 'yes') {
-  alert('Correct! I\'m terrified!');
-  ++score;
-} else {
-  alert('Wrong! I\'m terrified!');
+  var answer5 = prompt('Do I have a fear of Tarantulas?').toLowerCase();
+  console.log('Answer 5 is ' + answer5);
+
+  if (answer5 === 'y' || answer5 === 'yes') {
+    alert('Correct! I\'m terrified!');
+    ++score;
+  } else {
+    alert('Wrong! I\'m terrified!');
 }
+question5();
 
 //Q6
 var answer6 = parseInt(prompt('What is my favorite number?'));
