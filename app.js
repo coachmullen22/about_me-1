@@ -79,10 +79,12 @@ for (var i = 0; i < 3; i++) {
   console.log('Answer 6 is ' + answer6);
 }
 
-alert('OH NO! NO MORE TRIES!');
+if (i === 3) {
+  alert('Wrong again! OH NO! NO MORE TRIES!');
+}
+
 
 //Q7
-
 var answer7 = prompt('Can you guess a country I\'ve been to?').toLowerCase();
 console.log('Answer 7 is ' + answer7);
 var country = ['mexico', 'turkey','england'];
@@ -98,8 +100,11 @@ for (var j = 0; j < 5; j++) {
   }
   console.log('Answer 7 is ' + answer7);
 }
+if (i === 3) {
+  alert('Wrong again! OH NO! NO MORE TRIES!');
+}
 
-alert('Wrong again! OH NO! NO MORE TRIES!');
+
 alert('I\'ve been to Mexico, Turkey, and England!');
 alert('You got ' + score + ' right!' + 'Better luck next time!');
 console.log(score);
